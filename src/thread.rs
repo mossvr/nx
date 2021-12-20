@@ -4,6 +4,7 @@ use crate::svc;
 use crate::mem::alloc;
 use crate::wait;
 use crate::util;
+use core::arch::asm;
 use core::ptr;
 
 pub type ThreadName = util::CString<0x20>;

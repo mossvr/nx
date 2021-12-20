@@ -1,5 +1,6 @@
 use crate::svc;
 use crate::thread;
+use core::arch::asm;
 use core::cell::UnsafeCell;
 
 const HANDLE_WAIT_MASK: u32 = 0x40000000;

@@ -19,6 +19,8 @@
 #![feature(fn_traits)]
 #![macro_use]
 
+use core::arch::global_asm;
+
 // Required assembly bits (those which essentially cannot/shouldn't be inlined)
 
 global_asm!(include_str!("asm.s"));
